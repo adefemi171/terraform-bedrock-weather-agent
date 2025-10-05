@@ -1,0 +1,25 @@
+# Example Terraform Variables File
+# Copy this file to terraform.tfvars and customize the values
+
+# AWS Configuration
+aws_region = "eu-central-1"
+
+# Knowledge Base Configuration
+knowledge_base_name        = "my-weather-knowledge-base"
+knowledge_base_description = "Knowledge base for weather clothing suggestions"
+
+# Agent Configuration
+agent_name        = "weather-clothing-agent"
+agent_alias_name  = "weather-agent-alias"
+foundation_model  = "anthropic.claude-3-5-sonnet-20240620-v1:0"
+
+# Agent Instructions (optional - will use default if not specified)
+# agent_instruction = "Your custom agent instructions here..."
+
+# Tags
+tags = {
+  Environment = "dev"
+  Project     = "bedrock-agent"
+  ManagedBy   = "terraform"
+}
+
